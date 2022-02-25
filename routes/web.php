@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('entry');
 });
+
+
+//Route::get('/test/','TestController@retorn');
+Route::get('test', [TestController::class, 'regresaAlgo']);

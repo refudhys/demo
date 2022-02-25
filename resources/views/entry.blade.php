@@ -1,0 +1,2 @@
+
+    <register-component></register-component>
